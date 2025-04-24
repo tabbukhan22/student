@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student View</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h2>Attendance Status</h2>
+  <ul>
+    {% for name, status in data.items() %}
+      <li>{{ name }} - {{ status }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
